@@ -12,18 +12,34 @@
 </head>
 <body class="bodyPages">
     <header>
-        <nav>
-            <div class="contenedorLogo right" >
-                <a href="../index.html" ><img class="logo" src="../images/iconsinfondo.png" alt="Logo"></a>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/iconsinfondo2.png" alt="Logo" style="width:80px;">
+            </a>
+    
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ropa.html">Ropa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./conocenos.html">Conocenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="navHeader">
-                <li><a class="links pLinks" href="../index.html">Inicio</a></li>
-                <li><a class="links pLinks" href="../pages/ropa.html">Ropa</a></li>
-                <li><a class="links pLinks" href="../pages/accesorios.html">Accesorios</a></li>
-                <li><a class="links pLinks" href="../pages/conocenos.html">Conocenos</a></li>
-                <li><a class="links pLinks" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-            <div class="right"></div>
         </nav>
     </header>
     <main>
@@ -47,7 +63,20 @@
             </label>
             </div>
         </aside>
-        <section class="contenedor">
+        <section class="bloqueGaleria">
+            <div class="galeria rounded">
+                <img class="img-fluid" src="../images/ropa/valen1.jpeg" alt="Foto 1">
+                <img class="img-fluid" src="../images/ropa/valen2.jpeg" alt="Foto 2">
+                <img class="img-fluid" src="../images/ropa/valen3.jpeg" alt="Foto 3">
+                <img class="img-fluid" src="../images/ropa/valen4.jpeg" alt="Foto 4">
+                <img class="img-fluid" src="../images/ropa/valen5.jpeg" alt="Foto 5">
+                <img class="img-fluid" src="../images/ropa/valen6.jpeg" alt="Foto 6">
+                <img class="img-fluid" src="../images/ropa/valen7.jpeg" alt="Foto 7">
+                <img class="img-fluid" src="../images/ropa/valen8.jpeg" alt="Foto 8">
+                <img class="img-fluid" src="../images/ropa/valen9.jpeg" alt="Foto 9">
+            </div>
+        </section>
+        <!-- <section class="contenedor">
             <div class="item item1"></div>
             <div class="item item2"></div>
             <div class="item item3"></div>
@@ -58,19 +87,6 @@
             <div class="item item8"></div>
             <div class="item item9"></div>
             <div class="item item10"></div>
-        </section>
-        <!-- <section class="bloqueGaleria">
-            <div class="galeria">
-                <img src="../images/ropa/valen1.jpeg" alt="Foto 1">
-                <img src="../images/ropa/valen2.jpeg" alt="Foto 2">
-                <img src="../images/ropa/valen3.jpeg" alt="Foto 3">
-                <img src="../images/ropa/valen4.jpeg" alt="Foto 4">
-                <img src="../images/ropa/valen5.jpeg" alt="Foto 5">
-                <img src="../images/ropa/valen6.jpeg" alt="Foto 6">
-                <img src="../images/ropa/valen7.jpeg" alt="Foto 7">
-                <img src="../images/ropa/valen8.jpeg" alt="Foto 8">
-                <img src="../images/ropa/valen9.jpeg" alt="Foto 9">
-            </div>
         </section> -->
     </main>
     <footer>
@@ -82,5 +98,12 @@
             <a class="redes" href="https://www.tiktok.com/@mati_collavini" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
         </div>
     </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -27,7 +27,7 @@ header{
     align-items: center;
     width: 100%;
     height: 1000px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 /* ??? */
@@ -45,11 +45,13 @@ header{
 
 .sectionHeader{
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
     height: 1000px;
     width: 100%;
 }
+
+
 
 .mainLogo{
     margin: 20px;
@@ -113,7 +115,6 @@ footer{
 }
 
 .bodyPages header{
-    width: 100%;
     height: 100px;
 }
 
@@ -180,163 +181,6 @@ footer{
     padding: 10px 20px;
 }
 
-
-.bloqueGaleria{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 100%;
-    padding-bottom: 40px;
-}
-
-.galeria{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-
-.galeria img{
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-}
-
-/* Galerias de la seccion ropa y accesorios */
-.contenedor{
-    width: 100%;
-    height: auto;
-    background: #fff;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 200px);
-    gap: 20px;
-    padding: 20px;
-    grid-template-areas:
-    "img1 img2 img3 img10"
-    "img1 img2 img3 img10"
-    "img4 img5 img6 img10"
-    "img4 img5 img6 img10"
-    "img7 img8 img9 img10"
-    "img7 img8 img9 img10";
-}
-
-.item{
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-}
-
-/* Ropa */
-
-.item1{
-    background-image: url(./images/ropa/valen12.jpeg);
-    grid-area: img1;
-}
-
-.item2{
-    background-image: url(./images/ropa/valen2.jpeg);
-    background-position: bottom;
-    grid-area: img2;
-}
-
-.item3{
-    background-image: url(./images/ropa/valen3.jpeg);
-    grid-area: img3;
-}
-
-.item4{
-    background-image: url(./images/ropa/valen4.jpeg);
-    grid-area: img4;
-}
-
-.item5{
-    background-image: url(./images/ropa/valen5.jpeg);
-    grid-area: img5;
-}
-
-.item6{
-    background-image: url(./images/ropa/valen6.jpeg);
-    background-position: top;
-    grid-area: img6;
-}
-
-.item7{
-    background-image: url(./images/ropa/valen11.jpeg);
-    background-position: center;
-    grid-area: img7;
-}
-
-.item8{
-    background-image: url(./images/ropa/valen8.jpeg);
-    grid-area: img8;
-}
-.item9{
-    background-image: url(./images/ropa/valen9.jpeg);
-    grid-area: img9;
-}
-
-.item10{
-    background-image: url(./images/ropa/valen10.jpeg);
-    grid-area: img10;
-}
-
-/* Accesorios */
-
-.itemA1{
-    background-image: url(./images/accesorios/accesorio1.jpeg);
-    grid-area: img1;
-}
-
-.itemA2{
-    background-image: url(./images/accesorios/accesorio2.jpeg);
-    background-position: bottom;
-    grid-area: img2;
-}
-
-.itemA3{
-    background-image: url(./images/accesorios/accesorio3.jpeg);
-    grid-area: img3;
-}
-
-.itemA4{
-    background-image: url(./images/accesorios/accesorio4.jpeg);
-    grid-area: img4;
-}
-
-.itemA5{
-    background-image: url(./images/accesorios/accesorio5.jpeg);
-    grid-area: img5;
-}
-
-.itemA6{
-    background-image: url(./images/accesorios/accesorio6.jpeg);
-    background-position: top;
-    grid-area: img6;
-}
-
-.itemA7{
-    background-image: url(./images/accesorios/accesorio5.jpeg);
-    background-position: top;
-    grid-area: img7;
-}
-
-.itemA8{
-    background-image: url(./images/accesorios/accesorio4.jpeg);
-    grid-area: img8;
-}
-
-.itemA9{
-    background-image: url(./images/accesorios/accesorio3.jpeg);
-    grid-area: img9;
-}
-
-.itemA10{
-    background-image: url(./images/accesorios/accesorio4.jpeg);
-    grid-area: img10;
-}
-
 .carouselTitle{
     text-align: center;
     font-size: 200%;
@@ -358,12 +202,21 @@ footer{
 }
 
 .carousel-inner img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
 .headerButton{
     display: flex;
     justify-content: center;
+    height: 300px;
+    width: 100%;
     align-items: end;
 }
+
+.nav-link{
+    font-size: 180%;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 100;
+}
+

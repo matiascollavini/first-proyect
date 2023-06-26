@@ -20,6 +20,38 @@ body{
     background: #fff;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+}
+
+.photo-gallery h5{
+    padding-top: 5px;
+    font-size: small;
+    font-weight: bold;
+    text-align: start;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.photo-gallery h6{
+    font-size: small;
+    font-weight: bold;
+    text-align: start;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+}
+
 .bodyIndex header{
     display: flex;
     text-align: center;

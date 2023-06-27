@@ -155,6 +155,8 @@ footer{
 }
 
 .carouselTitle{
+    background-color: #000000d7;
+    color: #fff;
     text-align: center;
     font-size: 200%;
     padding-top: 25px;
@@ -206,9 +208,17 @@ footer{
     font-size: 30px;    
 }
 
+
 .carousel-inner img {
-    width: 50%;
+    width: 40%;
     height: auto;
+}
+
+@media only screen and (max-width:768px){
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .headerButton{

@@ -18,6 +18,7 @@ html, body{
 
 body{
     background: #fff;
+    overflow-x: none;
 }
 
 .bodyIndex header{

@@ -20,38 +20,6 @@ body{
     background: #fff;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo-gallery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    list-style: none;
-}
-
-.photo-gallery h5{
-    padding-top: 5px;
-    font-size: small;
-    font-weight: bold;
-    text-align: start;
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-}
-
-.photo-gallery h6{
-    font-size: small;
-    font-weight: bold;
-    text-align: start;
-}
-
-.photo-gallery img {
-    width: 100%;
-    height: auto;
-}
-
 .bodyIndex header{
     display: flex;
     text-align: center;
@@ -74,12 +42,12 @@ body{
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.5),
         rgba(0, 0, 0, 0.5)
-    ), url(./images/ropa/valen13.jpeg);
-    background-size: cover;
-    background-position: center;
-    filter: brightness(25%);
-    z-index: -1;    
-}
+        ), url(./images/ropa/valen13.jpeg);
+        background-size: cover;
+        background-position: center;
+        filter: brightness(25%);
+        z-index: -1;    
+    }
 
 @media only screen and (max-width:1024px) {
     .sectionHeader a{
@@ -95,8 +63,6 @@ body{
     height: 1000px;
     width: 100%;
 }
-
-
 
 .mainLogo{
     margin: 20px;
@@ -134,13 +100,6 @@ footer{
     text-decoration: none;
     color: #000000;
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-}
-
-
-.bodyPages header nav{
-    /* display: flex; */
-    width: 100vw;
-    font-family: 'Oswald', sans-serif;
 }
 
 .pageLinks{
@@ -201,6 +160,38 @@ footer{
     padding-bottom: 25px;
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+}
+
+.photo-gallery h5{
+    padding-top: 5px;
+    font-size: small;
+    font-weight: bold;
+    text-align: start;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.photo-gallery h6{
+    font-size: small;
+    font-weight: bold;
+    text-align: start;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
 }
 
 /* Bootstrap changes */

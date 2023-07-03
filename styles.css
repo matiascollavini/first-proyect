@@ -110,7 +110,6 @@ footer{
     color: #000;
 }
 
-
 .bodyPages main{
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: x-large;
@@ -122,19 +121,17 @@ footer{
     margin-bottom: 20px;
 }
 
+.bodyPages main p{
+    font-family: 'Noto Serif', serif;
+}
+
 .aboutUs{
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.bodyPages main p{
-    font-family: 'Noto Serif', serif;
-    font-size: 120%;
-}
-
-#identMaps{
-    display: flex;
-    justify-content: center;
+.aboutUs p{
+    font-size: 90%;
 }
 
 .bloqueContacto{
@@ -165,16 +162,7 @@ footer{
     font-weight: bold;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .photo-gallery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
     list-style: none;
 }
 

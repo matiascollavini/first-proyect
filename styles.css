@@ -46,10 +46,17 @@ body{
         z-index: -1;    
     }
 
+@media only screen and (max-width:425px){
+    .backgroundImage{
+        background-size: cover;
+    }
+}
+
 @media only screen and (max-width:1024px) {
     .sectionHeader a{
         display: flex;
         flex-flow: column wrap;
+        margin: 25px;
     }
 }
 
@@ -63,13 +70,14 @@ body{
 
 .mainLogo{
     margin: 20px;
+    margin-bottom: 60px;
 }
 
 .links{
     color: #fff;
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-size: 200%;
-    font-weight: normal;
+    font-size: 150%;
+    text-transform: uppercase;
     text-decoration: none;
     margin-left: 50px;
     margin-right: 50px;
@@ -83,20 +91,6 @@ body{
 
 .bodyPages .links{
     font-size: 200%;
-}
-
-footer{
-    background-color: #ffffff;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.redes{
-    text-align: center;
-    font-size: 150%;
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .pageLinks{
@@ -133,18 +127,6 @@ footer{
 .bloqueContacto{
     width: 400px;
     margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.bloqueContacto input,
-.bloqueContacto textarea{
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-.bloqueContacto button{
-    padding: 10px 20px;
 }
 
 .carouselTitle{
@@ -218,4 +200,3 @@ footer{
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 100;
 }
-

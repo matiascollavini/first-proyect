@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/df8058881c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../images/iconhead.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../styles.css">
     <title>Contacto - ALBIRI</title>
 </head>
+
 <body class="bodyPages">
     <header>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -17,12 +20,12 @@
             <a class="navbar-brand" href="../index.html">
                 <img src="../images/iconsinfondo2.png" alt="Logo" style="width:80px;">
             </a>
-    
+
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
@@ -46,31 +49,93 @@
         </nav>
     </header>
     <main>
-        <h1>¡Contactanos!</h1> 
+        <h1>¡Contactanos!</h1>
         <section class="bloqueContacto">
             <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="text" placeholder="Apellido" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="Mensaje" rows="5"></textarea>
-                <button type="submit">Enviar</button>
+                <div class="form-group">
+                    <label for="usr">Nombre:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Mensaje:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </section>
-    </main>     
+    </main>
     <footer>
-        <div class="redes">
-            <h3>¡Conocenos mas en nuestras redes!</h3>
-            <a class="redes" href="https://www.instagram.com/mati_collavini/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a class="redes" href="https://twitter.com/MatyNCL" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a class="redes" href="https://www.facebook.com/matiasnahuel.collavini" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a class="redes" href="https://www.tiktok.com/@mati_collavini" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <div class="container-fluid pt-4">
+            
+            <div class="row pt-5 pl-5 pr-5 bg-dark text-white">
+                
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h3">Código AV</p>
+                    <p class="text-secondary">Buenos Aires, Argentina.</p>
+                </div>
+                
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Links</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Politica de Privacidad</a>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Contacto</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Trabajá con nosotros</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Arrepentimiento de compra</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Correo Electrónio</a>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Redes</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="https://www.instagram.com/mati_collavini/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="https://twitter.com/MatyNCL"><i class="fa-brands fa-twitter" target="_blank"></i> Twitter</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="https://www.facebook.com/matiasnahuel.collavini" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>   
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="https://www.tiktok.com/@mati_collavini" target="_blank"><i class="fa-brands fa-tiktok"></i> Tiktok</a>   
+                    </div>
+                </div>
+                
+                <div class="h4 col-md-12 pt-4">
+                    <p class="text-white text-center">Copyright - Todos los derechos reservados © 2023</p>
+                </div>
+                
+            </div>
         </div>
     </footer>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

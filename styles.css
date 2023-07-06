@@ -6,22 +6,23 @@ font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif; */
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: #fff;
     overflow-x: none;
 }
 
-.bodyIndex header{
+.bodyIndex header {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -30,29 +31,27 @@ body{
     height: 1000px;
 }
 
-.backgroundImage{
+.backgroundImage {
     position: absolute;
     width: 100%;
     height: 1000px;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(0, 0, 0, 0.5)
-        ), url(./images/ropa/valen13.jpeg);
-        background-size: cover;
-        background-position: center;
-        filter: brightness(25%);
-        z-index: -1;    
-    }
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(0, 0, 0, 0.5)), url(./images/ropa/valen13.jpeg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(25%);
+    z-index: -1;
+}
 
 @media only screen and (max-width:1024px) {
-    .sectionHeader a{
+    .sectionHeader a {
         display: flex;
         flex-flow: column wrap;
         margin: 25px;
     }
 }
 
-.sectionHeader{
+.sectionHeader {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -60,15 +59,15 @@ body{
     width: 100%;
 }
 
-.mainLogo{
+.mainLogo {
     margin: 20px;
     margin-bottom: 60px;
 }
 
-.links{
+.links {
     color: #fff;
     position: relative;
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 150%;
     text-transform: uppercase;
     text-decoration: none;
@@ -77,7 +76,7 @@ body{
     transition: 0.5s;
 }
 
-.links:hover{
+.links:hover {
     color: #fff;
     text-decoration: none;
 }
@@ -100,66 +99,66 @@ body{
     transform: scaleX(1);
 }
 
-.bodyPages .links{
+.bodyPages .links {
     font-size: 200%;
 }
 
-.pageLinks{
+.pageLinks {
     display: flex;
     flex: 1;
     justify-content: center;
     color: #000;
 }
 
-.bodyPages main{
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+.bodyPages main {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: x-large;
     margin-top: 30px;
     text-align: center;
 }
 
-.bodyPages main h1{
+.bodyPages main h1 {
     margin-bottom: 20px;
 }
 
-.bodyPages main p{
+.bodyPages main p {
     font-family: 'Noto Serif', serif;
 }
 
-.aboutUs{
+.aboutUs {
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.aboutUs p{
+.aboutUs p {
     font-size: 90%;
 }
 
-.bloqueContacto{
+.bloqueContacto {
     width: 400px;
     margin: 0 auto;
 }
 
-.carouselSection{
+.carouselSection {
     display: flex;
     justify-content: center;
     background-image: url(./images/ropa/photography-g3b78172bf_1920.jpg);
     background-size: cover;
 }
 
-.photo-gallery{
+.photo-gallery {
     list-style: none;
 }
 
-.photo-gallery h5{
+.photo-gallery h5 {
     padding-top: 5px;
     font-size: small;
     font-weight: bold;
     text-align: start;
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.photo-gallery h6{
+.photo-gallery h6 {
     font-size: small;
     font-weight: bold;
     text-align: start;
@@ -170,18 +169,48 @@ body{
     height: auto;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Bootstrap changes */
-.fa-solid.fa-chevron-left{
+.fa-solid.fa-chevron-left {
     color: #000;
     font-size: 30px;
 }
 
-.fa-solid.fa-chevron-right{
+.fa-solid.fa-chevron-right {
     color: #000;
-    font-size: 30px;    
+    font-size: 30px;
 }
 
-.carousel{
+.carousel {
     display: flex;
     align-items: center;
     width: 40%;
@@ -193,14 +222,14 @@ body{
     height: auto;
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
     .carousel {
         width: 100%;
         height: auto;
     }
 }
 
-.headerButton{
+.headerButton {
     display: flex;
     justify-content: center;
     height: 300px;
@@ -208,8 +237,8 @@ body{
     align-items: end;
 }
 
-.nav-link{
+.nav-link {
     font-size: 150%;
-    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 100;
 }

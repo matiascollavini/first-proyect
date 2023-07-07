@@ -60,8 +60,17 @@ body {
 }
 
 .mainLogo {
+    height: 100px;
+    width: auto;
     margin: 20px;
     margin-bottom: 60px;
+}
+
+@media only screen and (max-width:250px){
+    .mainLogo{
+        height: 50px;
+        width: auto;
+    }
 }
 
 .links {
@@ -119,6 +128,14 @@ body {
 
 .bodyPages main h1 {
     margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width:200px){
+    .bodyPages main h1{
+        font-size: small;
+        text-align: center;
+    }
 }
 
 .bodyPages main p {
@@ -137,6 +154,12 @@ body {
 .bloqueContacto {
     width: 400px;
     margin: 0 auto;
+}
+
+@media only screen and (max-width:400px){
+    .bloqueContacto{
+        width: 100%;
+    }
 }
 
 .carouselSection {
@@ -198,7 +221,6 @@ body {
 
 
 
-
 /* Bootstrap changes */
 .fa-solid.fa-chevron-left {
     color: #000;
@@ -235,6 +257,13 @@ body {
     height: 300px;
     width: 100%;
     align-items: end;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-link {

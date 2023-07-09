@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald:wght@200;300;400;600&family=Playfair+Display&family=Playfair:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald:wght@200;300;400;600&family=Playfair+Display&family=Playfair:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+$primary-color: #fff;
+$secondary-color: #000;
 
 * {
     margin: 0;
@@ -12,7 +15,7 @@ body {
 }
 
 body {
-    background: #fff;
+    background: $primary-color;
     overflow-x: none;
 }
 
@@ -29,7 +32,8 @@ body {
     position: absolute;
     width: 100%;
     height: 1000px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(./images/ropa/valen13.jpeg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)),
+        url(./images/ropa/valen13.jpeg);
     background-size: cover;
     background-position: center;
     filter: brightness(25%);
@@ -42,13 +46,13 @@ body {
     justify-content: center;
     height: 1000px;
     width: 100%;
-}
 
-@media only screen and (max-width: 1024px) {
-    .sectionHeader a {
-        display: flex;
-        flex-flow: column wrap;
-        margin: 25px;
+    @media only screen and (max-width: 1024px) {
+        a {
+            display: flex;
+            flex-flow: column wrap;
+            margin: 25px;
+        }
     }
 }
 
@@ -57,10 +61,8 @@ body {
     width: auto;
     margin: 20px;
     margin-bottom: 60px;
-}
 
-@media only screen and (max-width: 250px) {
-    .mainLogo {
+    @media only screen and (max-width: 250px) {
         height: 50px;
         width: auto;
     }
@@ -69,36 +71,36 @@ body {
 .links {
     color: #fff;
     position: relative;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 150%;
     text-transform: uppercase;
     text-decoration: none;
     margin-left: 50px;
     margin-right: 50px;
     transition: 0.5s;
-}
 
-.links:hover {
-    color: #fff;
-    text-decoration: none;
-}
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
 
-.links::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background-color: #fff;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
-}
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #fff;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
 
-.links:hover::after {
-    visibility: visible;
-    transform: scaleX(1);
+    &:hover::after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
 }
 
 .bodyPages .links {
@@ -113,44 +115,40 @@ body {
 }
 
 .bodyPages main {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: x-large;
     margin-top: 30px;
     text-align: center;
-}
 
-.bodyPages main h1 {
-    margin-bottom: 20px;
-    margin-top: 80px;
-}
+    h1 {
+        margin-bottom: 20px;
+        margin-top: 80px;
 
-@media only screen and (max-width: 200px) {
-    .bodyPages main h1 {
-        font-size: small;
-        text-align: center;
+        @media only screen and (max-width: 200px) {
+            font-size: small;
+            text-align: center;
+        }
     }
-}
 
-.bodyPages main p {
-    font-family: "Noto Serif", serif;
+    p {
+        font-family: 'Noto Serif', serif;
+    }
 }
 
 .aboutUs {
     padding-left: 5%;
     padding-right: 5%;
-}
 
-.aboutUs p {
-    font-size: 90%;
+    p {
+        font-size: 90%;
+    }
 }
 
 .bloqueContacto {
     width: 400px;
     margin: 0 auto;
-}
 
-@media only screen and (max-width: 400px) {
-    .bloqueContacto {
+    @media only screen and (max-width: 400px) {
         width: 100%;
     }
 }
@@ -164,25 +162,25 @@ body {
 
 .photo-gallery {
     list-style: none;
-}
 
-.photo-gallery h5 {
-    padding-top: 5px;
-    font-size: small;
-    font-weight: bold;
-    text-align: start;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+    h5 {
+        padding-top: 5px;
+        font-size: small;
+        font-weight: bold;
+        text-align: start;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
 
-.photo-gallery h6 {
-    font-size: small;
-    font-weight: bold;
-    text-align: start;
-}
+    h6 {
+        font-size: small;
+        font-weight: bold;
+        text-align: start;
+    }
 
-.photo-gallery img {
-    width: 100%;
-    height: auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -216,10 +214,8 @@ body {
     display: flex;
     align-items: center;
     width: 40%;
-}
 
-@media only screen and (max-width: 768px) {
-    .carousel {
+    @media only screen and (max-width: 768px) {
         width: 100%;
         height: auto;
     }
@@ -242,8 +238,6 @@ body {
 
 .nav-link {
     font-size: 150%;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 100;
 }
-
-/*# sourceMappingURL=styles.css.map */

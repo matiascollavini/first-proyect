@@ -1,249 +1,261 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald:wght@200;300;400;600&family=Playfair+Display&family=Playfair:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap");
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* ul {
+  padding: 0;
+  margin: 0;
 }
 
 html,
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: #fff;
-    overflow-x: none;
+  background: #fff;
+  overflow-x: none;
 }
 
 .bodyIndex header {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 1000px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .backgroundImage {
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(./images/ropa/valen13.jpeg);
-    background-size: cover;
-    background-position: center;
-    filter: brightness(25%);
-    z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url(./images/ropa/valen13.jpeg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(25%);
+  z-index: -1;
 }
 
 .sectionHeader {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .sectionHeader a {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    height: 1000px;
-    width: 100%;
-}
-
-@media only screen and (max-width: 1024px) {
-    .sectionHeader a {
-        display: flex;
-        flex-flow: column wrap;
-        margin: 25px;
-    }
+    margin: 25px;
+  }
 }
 
 .mainLogo {
-    height: 100px;
-    width: auto;
-    margin: 20px;
-    margin-bottom: 60px;
+  height: 100px;
+  width: auto;
+  margin: 20px;
+  margin-bottom: 60px;
 }
-
 @media only screen and (max-width: 250px) {
-    .mainLogo {
-        height: 50px;
-        width: auto;
-    }
+  .mainLogo {
+    height: 50px;
+    width: auto;
+  }
 }
 
 .links {
-    color: #fff;
-    position: relative;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 150%;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-left: 50px;
-    margin-right: 50px;
-    transition: 0.5s;
+  color: #fff;
+  position: relative;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 150%;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 50px;
+  margin-right: 50px;
+  transition: 0.5s;
 }
-
 .links:hover {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
-
 .links::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background-color: #fff;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
 }
-
 .links:hover::after {
-    visibility: visible;
-    transform: scaleX(1);
-}
-
-.bodyPages .links {
-    font-size: 200%;
-}
-
-.pageLinks {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    color: #000;
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 .bodyPages main {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: x-large;
-    margin-top: 30px;
-    text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: x-large;
+  margin-top: 30px;
+  text-align: center;
 }
-
-.bodyPages main h1 {
-    margin-bottom: 20px;
-    margin-top: 80px;
+.bodyPages h1 {
+  margin-bottom: 20px;
+  margin-top: 80px;
 }
-
-@media only screen and (max-width: 200px) {
-    .bodyPages main h1 {
-        font-size: small;
-        text-align: center;
-    }
+@media only screen and (max-width: 550px) {
+  .bodyPages h1 {
+    font-size: 120%;
+  }
 }
-
-.bodyPages main p {
-    font-family: "Noto Serif", serif;
+.bodyPages p {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .aboutUs {
-    padding-left: 5%;
-    padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-
 .aboutUs p {
-    font-size: 90%;
+  font-size: 90%;
 }
 
 .bloqueContacto {
-    width: 400px;
-    margin: 0 auto;
+  width: 400px;
+  margin: 0 auto;
 }
-
 @media only screen and (max-width: 400px) {
-    .bloqueContacto {
-        width: 100%;
-    }
+  .bloqueContacto {
+    width: 100%;
+  }
 }
 
 .carouselSection {
-    display: flex;
-    justify-content: center;
-    background-image: url(./images/ropa/photography-g3b78172bf_1920.jpg);
-    background-size: cover;
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/ropa/photography-g3b78172bf_1920.jpg);
+  background-size: cover;
 }
 
 .photo-gallery {
-    list-style: none;
+  width: 100%;
+  margin-top: 100px;
 }
-
+.photo-gallery ul {
+  list-style: none;
+}
 .photo-gallery h5 {
-    padding-top: 5px;
-    font-size: small;
-    font-weight: bold;
-    text-align: start;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 5px;
+  font-size: small;
+  font-weight: bold;
+  text-align: start;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 .photo-gallery h6 {
-    font-size: small;
-    font-weight: bold;
-    text-align: start;
+  font-size: small;
+  font-weight: bold;
+  text-align: start;
+}
+.photo-gallery img {
+  width: 100%;
+  height: auto;
 }
 
-.photo-gallery img {
-    width: 100%;
-    height: auto;
+.index-galery {
+  width: 100%;
+  height: auto;
+}
+.index-galery ul {
+  list-style: none;
+}
+.index-galery li {
+  padding: 0;
+}
+.index-galery img {
+  width: 100%;
+  height: auto;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #888;
+  background-color: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+  background-color: #555;
+}
+
+.newsletter {
+  width: 800px;
+  margin: 0 auto;
+}
+.newsletter h2 {
+  font-size: x-large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.newsletter div input {
+  font-size: x-small;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+@media only screen and (max-width: 800px) {
+  .newsletter {
+    width: 100%;
+  }
+}
+
+.bloqueNewsletter {
+  width: 100%;
+  border-top: 1px solid #000;
 }
 
 /* Bootstrap changes */
 .fa-solid.fa-chevron-left {
-    color: #000;
-    font-size: 30px;
+  color: #000;
+  font-size: 30px;
 }
 
 .fa-solid.fa-chevron-right {
-    color: #000;
-    font-size: 30px;
+  color: #000;
+  font-size: 30px;
 }
 
 .carousel {
-    display: flex;
-    align-items: center;
-    width: 40%;
+  display: flex;
+  align-items: center;
+  width: 40%;
 }
-
 @media only screen and (max-width: 768px) {
-    .carousel {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.headerButton {
-    display: flex;
-    justify-content: center;
-    height: 300px;
+  .carousel {
     width: 100%;
-    align-items: end;
+    height: auto;
+  }
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-link {
-    font-size: 150%;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 100;
-}
-
-/*# sourceMappingURL=styles.css.map */
+  font-size: 150%;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}/*# sourceMappingURL=styles.css.map */

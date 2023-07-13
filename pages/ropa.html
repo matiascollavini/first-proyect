@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/df8058881c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../images/iconhead.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../styles.css">
     <title>Ropa - ALBIRI</title>
@@ -46,52 +47,53 @@
         </nav>
     </header>
     <main>
-        <h1>
-            Nuestra ropa
-        </h1>
         <section>
-            <ul class="container photo-gallery">
-                    <div class="row">
-                        <li class="col-md-6"><img class="img-fluid" src="../images/ropa/valen10.jpeg" alt="Foto 1">
+            <div class="container photo-gallery">
+                    <h1 data-aos="fade-up"
+                    data-aos-duration="500">
+                        Nuestra ropa
+                    </h1>
+                    <ul class="row">
+                        <li class="col-md-6" data-aos="fade-right"><img class="img-fluid" src="../images/ropa/valen10.jpeg" alt="Foto 1">
                         <h5>CHALECO DE LANILLA MARRON</h5>
                         <h6>$45.000</h6></li>
-                        <li class="col-md-6"><img class="img-fluid" src="../images/ropa/valen1.jpeg" alt="Foto 2">
+                        <li class="col-md-6" data-aos="fade-left"><img class="img-fluid" src="../images/ropa/valen1.jpeg" alt="Foto 2">
                         <h5>BLAZER ECOCUERO NEGRO</h5>
                         <h6>$90.000</h6></li>
-                    </div>
-                    <div class="row">
-                        <li class="col-md-6"><img class="img-fluid" src="../images/ropa/valen2.jpeg" alt="Foto 3">
+                    </ul>
+                    <ul class="row">
+                        <li class="col-md-6" data-aos="fade-right"><img class="img-fluid" src="../images/ropa/valen2.jpeg" alt="Foto 3">
                         <h5>POLERON GRIS</h5>
                         <h6>$50.000</h6></li>
-                        <li class="col-md-6"><img class="img-fluid" src="../images/ropa/valen3.jpeg" alt="Foto 4">
+                        <li class="col-md-6" data-aos="fade-left"><img class="img-fluid" src="../images/ropa/valen3.jpeg" alt="Foto 4">
                         <h5>VESTIDO ECOCUERO NEGRO</h5>
                         <h6>$60.000</h6></li>
-                    </div>
-                    <div class="row">
-                        <li class="col-md-6"><img class="img-fluid" src="../images/ropa/valen4.jpeg" alt="Foto 5">
+                    </ul>
+                    <ul class="row">
+                        <li class="col-md-6" data-aos="fade-right"><img class="img-fluid" src="../images/ropa/valen4.jpeg" alt="Foto 5">
                         <h5>POLLERA VOLADOS</h5>
                         <h6>$40.000</h6></li>
-                        <li class="col-md-6"><img class="img-fluid" src="../images/ropa/valen5.jpeg" alt="Foto 6">
+                        <li class="col-md-6" data-aos="fade-left"><img class="img-fluid" src="../images/ropa/valen5.jpeg" alt="Foto 6">
                         <h5>CATSUIT</h5>
                         <h6>$45.000</h6></li>
-                    </div>
-                    <div class="row">
-                        <li class="col-md-6"><img class="img-fluid" src="../images/ropa/valen6.jpeg" alt="Foto 7">
+                    </ul>
+                    <ul class="row">
+                        <li class="col-md-6" data-aos="fade-right"><img class="img-fluid" src="../images/ropa/valen6.jpeg" alt="Foto 7">
                         <h5>POLLERA ECOCUERO TABLEADA NEGRA</h5>
                         <h6>$45.000</h6></li>
-                        <li class="col-md-6"><img class="img-fluid" src="../images/ropa/valen7.jpeg" alt="Foto 8">
+                        <li class="col-md-6" data-aos="fade-left"><img class="img-fluid" src="../images/ropa/valen7.jpeg" alt="Foto 8">
                         <h5>TOP NEGRO VOLADO</h5>
                         <h6>$30.000</h6></li>
-                    </div>
-                    <div class="row">
-                        <li class="col-md-6"><img class="img-fluid" src="../images/ropa/valen8.jpeg" alt="Foto 9">
+                    </ul>
+                    <ul class="row">
+                        <li class="col-md-6" data-aos="fade-right"><img class="img-fluid" src="../images/ropa/valen8.jpeg" alt="Foto 9">
                         <h5>POLERA BLANCA</h5>
                         <h6>$40.000</h6></li>
-                        <li class="col-md-6"><img class="img-fluid" src="../images/ropa/valen9.jpeg" alt="Foto 10">
+                        <li class="col-md-6" data-aos="fade-left"><img class="img-fluid" src="../images/ropa/valen9.jpeg" alt="Foto 10">
                         <h5>PARACHUTE BEIGE</h5>
                         <h6>$50.000</h6></li>
-                    </div>
-            </ul> 
+                    </ul>
+            </div> 
         </section>
     </main>
     <footer>
@@ -100,10 +102,24 @@
             <div class="row pt-5 pl-5 pr-5 bg-dark text-white">
                 
                 <div class="col-xs-12 col-md-6 col-lg-3">
-                    <p class="h3 mb-3 mt-3">ALB</p>
-                    <p class="text-secondary">Buenos Aires, Argentina.</p>
+                    <p class="h5 mb-3 mt-3">Mapa del sitio</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="../index.html">Inicio</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./ropa.html">Ropa</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./accesorios.html">Accesorios</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./conocenos.html">Conocenos</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="./contacto.html">Contactanos</a>
+                    </div>
                 </div>
-                
+
                 <div class="col-xs-12 col-md-6 col-lg-3">
                     <p class="h5 mb-3 mt-3">Links</p>
                     <div class="mb-2">
@@ -143,7 +159,7 @@
                     </div>
                 </div>
                 
-                <div class="h4 col-md-12 pt-4">
+                <div class="h6 col-md-12 pt-4">
                     <p class="text-white text-center">Copyright - Todos los derechos reservados © 2023</p>
                 </div>
                 
@@ -157,5 +173,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

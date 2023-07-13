@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald:wght@200;300;400;600&family=Playfair+Display&family=Playfair:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
-$primary-color: #fff;
-$secondary-color: #000;
+$color-blanco: #fff;
+$color-negro: #000;
+$font1: "Open Sans",
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 html,
@@ -15,23 +25,25 @@ body {
 }
 
 body {
-    background: $primary-color;
+    background: $color-blanco;
     overflow-x: none;
 }
 
-.bodyIndex header {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 1000px;
+.bodyIndex {
+    header {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
 }
 
 .backgroundImage {
     position: absolute;
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)),
         url(./images/ropa/valen13.jpeg);
     background-size: cover;
@@ -44,7 +56,7 @@ body {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 1000px;
+    height: 100vh;
     width: 100%;
 
     @media only screen and (max-width: 1024px) {
@@ -69,9 +81,9 @@ body {
 }
 
 .links {
-    color: #fff;
+    color: $color-blanco;
     position: relative;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: $font1;
     font-size: 150%;
     text-transform: uppercase;
     text-decoration: none;
@@ -80,7 +92,7 @@ body {
     transition: 0.5s;
 
     &:hover {
-        color: #fff;
+        color: $color-blanco;
         text-decoration: none;
     }
 
@@ -91,7 +103,7 @@ body {
         height: 2px;
         bottom: -2px;
         left: 0;
-        background-color: #fff;
+        background-color: $color-blanco;
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.3s ease-in-out;
@@ -103,35 +115,25 @@ body {
     }
 }
 
-.bodyPages .links {
-    font-size: 200%;
-}
-
-.pageLinks {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    color: #000;
-}
-
-.bodyPages main {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: x-large;
-    margin-top: 30px;
-    text-align: center;
+.bodyPages {
+    main {
+        font-family: $font1;
+        font-size: x-large;
+        margin-top: 30px;
+        text-align: center;
+    }
 
     h1 {
         margin-bottom: 20px;
         margin-top: 80px;
 
-        @media only screen and (max-width: 200px) {
-            font-size: small;
-            text-align: center;
+        @media only screen and (max-width:550px) {
+            font-size: 120%;
         }
     }
 
     p {
-        font-family: 'Noto Serif', serif;
+        font-family: $font1;
     }
 }
 
@@ -161,14 +163,19 @@ body {
 }
 
 .photo-gallery {
-    list-style: none;
+    width: 100%;
+    margin-top: 100px;
+
+    ul {
+        list-style: none;
+    }
 
     h5 {
         padding-top: 5px;
         font-size: small;
         font-weight: bold;
         text-align: start;
-        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: $font1;
     }
 
     h6 {
@@ -183,8 +190,26 @@ body {
     }
 }
 
+.index-galery {
+    width: 100%;
+    height: auto;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        padding: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -199,14 +224,45 @@ body {
     background-color: #555;
 }
 
+.newsletter {
+    width: 800px;
+    margin: 0 auto;
+
+    h2 {
+        font-size: x-large;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    div {
+
+        input {
+            font-size: x-small;
+            height: 40px;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+
+    }
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.bloqueNewsletter{
+    width: 100%;
+    border-top: 1px solid #000;
+}
+
 /* Bootstrap changes */
 .fa-solid.fa-chevron-left {
-    color: #000;
+    color: $color-negro;
     font-size: 30px;
 }
 
 .fa-solid.fa-chevron-right {
-    color: #000;
+    color: $color-negro;
     font-size: 30px;
 }
 
@@ -221,14 +277,6 @@ body {
     }
 }
 
-.headerButton {
-    display: flex;
-    justify-content: center;
-    height: 300px;
-    width: 100%;
-    align-items: end;
-}
-
 .navbar {
     position: fixed;
     top: 0;
@@ -238,6 +286,6 @@ body {
 
 .nav-link {
     font-size: 150%;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: $font1;
     font-weight: 100;
 }

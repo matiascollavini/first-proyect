@@ -8,6 +8,10 @@
   padding: 0;
   margin: 0;
 }
+* li {
+  padding: 0;
+  margin: 0;
+}
 
 html,
 body {
@@ -132,7 +136,7 @@ body {
 }
 @media only screen and (max-width: 400px) {
   .bloqueContacto {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -146,6 +150,12 @@ body {
 .photo-gallery {
   width: 100%;
   margin-top: 100px;
+}
+.photo-gallery data-aos .fade-right {
+  display: none;
+}
+.photo-gallery data-aos .fade-left {
+  display: none;
 }
 .photo-gallery ul {
   list-style: none;

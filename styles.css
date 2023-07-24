@@ -114,13 +114,27 @@ body {
     font-size: 120%;
   }
 }
+@media only screen and (max-width: 550px) {
+  .bodyPages h2 {
+    font-size: 90%;
+  }
+}
 .bodyPages p {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .aboutUs {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.aboutUs h1 {
+  font-weight: bold;
+}
+.aboutUs h2 {
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+  padding-top: 30px;
 }
 .aboutUs p {
   font-size: 90%;
@@ -137,10 +151,13 @@ body {
 }
 
 .carouselSection {
+  width: 100%;
+  height: 850px;
   display: flex;
   justify-content: center;
   background-image: url(./images/ropa/photography-g3b78172bf_1920.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .photo-gallery {
@@ -150,6 +167,9 @@ body {
 }
 .photo-gallery ul {
   list-style: none;
+}
+.photo-gallery h1 {
+  margin-top: 0px;
 }
 .photo-gallery h5 {
   padding-top: 5px;
@@ -208,7 +228,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
-.newsletter div input {
+.newsletter form input {
   font-size: x-small;
   height: 40px;
   border: none;
@@ -239,7 +259,7 @@ body {
 .carousel {
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 30%;
 }
 @media only screen and (max-width: 768px) {
   .carousel {

@@ -152,7 +152,7 @@ body {
 
 .carouselSection {
   width: 100%;
-  height: 850px;
+  height: auto;
   display: flex;
   justify-content: center;
   background-image: url(./images/ropa/photography-g3b78172bf_1920.jpg);
@@ -260,16 +260,15 @@ body {
   display: flex;
   align-items: center;
   width: 30%;
-}
-@media only screen and (max-width: 1024px) {
-  .carousel {
-    width: 50%;
-  }
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 @media only screen and (max-width: 768px) {
   .carousel {
     width: 100%;
     height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
